@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="title">
+  <title id="title">A hand-tied bouquet of dried marigolds, wheat and bunny tails</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFF9EF"/>
+      <stop offset="0.6" stop-color="#F7EAD7"/>
+      <stop offset="1" stop-color="#EEDCC2"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.32" r="0.55">
+      <stop offset="0" stop-color="#FFE6BE"/>
+      <stop offset="1" stop-color="#FFE6BE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vase" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B87525"/>
+      <stop offset="0.3" stop-color="#E9A23B"/>
+      <stop offset="0.65" stop-color="#F3C382"/>
+      <stop offset="1" stop-color="#A5681F"/>
+    </linearGradient>
+    <radialGradient id="marigold" cx="0.4" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#FFC85B"/>
+      <stop offset="0.6" stop-color="#E9A23B"/>
+      <stop offset="1" stop-color="#C07818"/>
+    </radialGradient>
+    <radialGradient id="rust" cx="0.4" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#F2A57C"/>
+      <stop offset="0.6" stop-color="#D9643F"/>
+      <stop offset="1" stop-color="#A43E22"/>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <ellipse cx="400" cy="400" rx="380" ry="350" fill="url(#halo)"/>
+  <ellipse cx="404" cy="858" rx="230" ry="36" fill="#39271D" fill-opacity="0.16" filter="url(#soft)"/>
+
+  <g stroke-linecap="round" fill="none">
+    <g stroke="#8C7A4E" stroke-width="5">
+      <path d="M400 640 C392 520 356 430 316 350"/>
+      <path d="M400 640 C404 500 410 400 402 300"/>
+      <path d="M400 640 C408 520 460 440 500 372"/>
+      <path d="M400 640 C388 540 330 480 286 438"/>
+      <path d="M400 640 C412 540 476 500 524 464"/>
+      <path d="M400 640 C398 560 366 500 340 470"/>
+    </g>
+    <g stroke="#A9A06E" stroke-width="3">
+      <path d="M400 640 C416 540 486 470 548 430"/>
+      <path d="M400 640 C380 540 312 500 252 470"/>
+      <path d="M400 640 C404 520 438 452 456 400"/>
+    </g>
+    <g stroke="#B8A878" stroke-width="2.5">
+      <path d="M456 400 C440 380 438 360 444 344"/>
+      <path d="M548 430 C534 408 534 388 542 372"/>
+      <path d="M252 470 C246 446 250 428 260 414"/>
+    </g>
+  </g>
+
+  <g>
+    <!-- marigold blooms -->
+    <g transform="translate(316 334)">
+      <g fill="url(#marigold)">
+        <ellipse rx="34" ry="62" transform="rotate(0)"/>
+        <ellipse rx="34" ry="62" transform="rotate(45)"/>
+        <ellipse rx="34" ry="62" transform="rotate(90)"/>
+        <ellipse rx="34" ry="62" transform="rotate(135)"/>
+      </g>
+      <circle r="34" fill="#F6C25C"/>
+      <circle r="20" fill="#D98E25" opacity="0.65"/>
+      <circle r="9" fill="#B87525"/>
+    </g>
+    <g transform="translate(402 288)">
+      <g fill="url(#rust)">
+        <ellipse rx="30" ry="56"/>
+        <ellipse rx="30" ry="56" transform="rotate(60)"/>
+        <ellipse rx="30" ry="56" transform="rotate(120)"/>
+      </g>
+      <circle r="30" fill="#E98254"/>
+      <circle r="9" fill="#8E3A20"/>
+    </g>
+    <g transform="translate(500 358)">
+      <g fill="url(#marigold)">
+        <ellipse rx="30" ry="54"/>
+        <ellipse rx="30" ry="54" transform="rotate(72)"/>
+        <ellipse rx="30" ry="54" transform="rotate(144)"/>
+      </g>
+      <circle r="26" fill="#F8CE78"/>
+      <circle r="8" fill="#C07818"/>
+    </g>
+    <g transform="translate(286 428)">
+      <g fill="#E8A16A">
+        <ellipse rx="24" ry="44"/>
+        <ellipse rx="24" ry="44" transform="rotate(60)"/>
+        <ellipse rx="24" ry="44" transform="rotate(120)"/>
+      </g>
+      <circle r="22" fill="#FAD9B6"/>
+      <circle r="7" fill="#B87525"/>
+    </g>
+    <g transform="translate(528 454)">
+      <g fill="url(#rust)">
+        <ellipse rx="22" ry="40"/>
+        <ellipse rx="22" ry="40" transform="rotate(60)"/>
+        <ellipse rx="22" ry="40" transform="rotate(120)"/>
+      </g>
+      <circle r="20" fill="#F2A57C"/>
+      <circle r="6" fill="#8E3A20"/>
+    </g>
+
+    <!-- bunny tails -->
+    <g fill="#F6E5C9">
+      <ellipse cx="444" cy="338" rx="17" ry="30" transform="rotate(10 444 338)"/>
+      <ellipse cx="542" cy="366" rx="16" ry="28" transform="rotate(14 542 366)"/>
+      <ellipse cx="260" cy="408" rx="15" ry="26" transform="rotate(-12 260 408)"/>
+      <ellipse cx="340" cy="466" rx="14" ry="24" transform="rotate(8 340 466)"/>
+    </g>
+    <!-- wheat -->
+    <g fill="#D8B978">
+      <g transform="rotate(18 462 372)">
+        <ellipse cx="462" cy="360" rx="6" ry="12"/>
+        <ellipse cx="470" cy="372" rx="6" ry="12"/>
+        <ellipse cx="454" cy="372" rx="6" ry="12"/>
+        <ellipse cx="462" cy="384" rx="6" ry="12"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- vase -->
+  <g>
+    <path d="M322 632 H478 L492 812 C492 836 308 836 308 812 Z" fill="url(#vase)"/>
+    <ellipse cx="400" cy="632" rx="78" ry="20" fill="#F3C382"/>
+    <ellipse cx="400" cy="632" rx="62" ry="13" fill="#B87525" opacity="0.55"/>
+    <path d="M326 690 C350 682 450 682 474 690" stroke="#FFF3DD" stroke-opacity="0.35" stroke-width="6" fill="none"/>
+    <path d="M330 760 C356 770 444 770 470 760" stroke="#8E4F1E" stroke-opacity="0.3" stroke-width="4" fill="none"/>
+  </g>
+
+  <!-- ribbon -->
+  <g>
+    <path d="M356 640 C374 664 426 664 444 640" stroke="#C9503C" stroke-width="13" fill="none" stroke-linecap="round"/>
+    <path d="M444 644 C468 668 470 692 460 712 C448 694 438 680 430 666 Z" fill="#B84533"/>
+    <path d="M356 644 C332 668 330 692 340 712 C352 694 362 680 370 666 Z" fill="#C9503C"/>
+  </g>
+
+  <g fill="#E9A23B">
+    <path d="M196 300 c1.2 9 4.2 12 13 13 -8.8 1-11.8 4-13 13-1.2-9-4.2-12-13-13 8.8-1 11.8-4 13-13Z"/>
+    <path d="M632 560 c1.2 9 4.2 12 13 13 -8.8 1-11.8 4-13 13-1.2-9-4.2-12-13-13 8.8-1 11.8-4 13-13Z" fill="#C9503C"/>
+  </g>
+
+  <rect width="800" height="1000" filter="url(#grain)"/>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="title">
+  <title id="title">A mango wood arch frame with a hand-painted sun print</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFF9EF"/>
+      <stop offset="0.6" stop-color="#F7EAD9"/>
+      <stop offset="1" stop-color="#EEDCC3"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.38" r="0.55">
+      <stop offset="0" stop-color="#FFE6BF"/>
+      <stop offset="1" stop-color="#FFE6BF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9C6A38"/>
+      <stop offset="0.25" stop-color="#D6A66D"/>
+      <stop offset="0.55" stop-color="#E9C291"/>
+      <stop offset="0.8" stop-color="#C08C50"/>
+      <stop offset="1" stop-color="#8E5C2C"/>
+    </linearGradient>
+    <linearGradient id="print" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDF3E2"/>
+      <stop offset="1" stop-color="#F3E0C4"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F3C382"/>
+      <stop offset="1" stop-color="#D98E25"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <ellipse cx="400" cy="430" rx="380" ry="360" fill="url(#halo)"/>
+  <ellipse cx="404" cy="872" rx="250" ry="32" fill="#39271D" fill-opacity="0.16" filter="url(#soft)"/>
+
+  <g>
+    <path d="M262 840 V470 A138 138 0 0 1 538 470 V840 Z" fill="url(#wood)"/>
+    <path d="M290 840 V478 A110 110 0 0 1 510 478 V840 Z" fill="#F9EBD6"/>
+    <path d="M312 840 V488 A88 88 0 0 1 488 488 V840 Z" fill="url(#print)"/>
+
+    <g>
+      <circle cx="400" cy="560" r="72" fill="url(#sun)"/>
+      <g stroke="#C9822B" stroke-width="5" stroke-linecap="round" opacity="0.8">
+        <path d="M400 462 V436"/>
+        <path d="M336 482 L318 460"/>
+        <path d="M464 482 L482 460"/>
+        <path d="M314 544 H286"/>
+        <path d="M486 544 H514"/>
+      </g>
+      <path d="M312 700 C344 668 380 700 400 690 C428 676 460 700 488 684 V840 H312 Z" fill="#E8C79C"/>
+      <path d="M312 752 C350 726 390 760 420 744 C452 728 470 748 488 738 V840 H312 Z" fill="#C99B62"/>
+      <path d="M312 800 C360 780 390 806 430 792 C458 782 474 794 488 790 V840 H312 Z" fill="#8C9A76" opacity="0.65"/>
+      <path d="M330 840 C338 810 352 786 366 770" stroke="#8A6A4D" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M470 840 C462 812 450 792 436 778" stroke="#8A6A4D" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <path d="M348 840 c2 -60 10 -96 34 -120" stroke="#7A5A3A" stroke-width="2" fill="none" opacity="0.4"/>
+    </g>
+
+    <g stroke="#7A4A1E" stroke-opacity="0.22" stroke-width="2">
+      <path d="M280 500 V830"/>
+      <path d="M296 490 V838"/>
+      <path d="M520 500 V830"/>
+      <path d="M504 490 V838"/>
+      <path d="M262 700 H290"/>
+      <path d="M510 700 H538"/>
+    </g>
+
+    <path d="M262 840 H538" stroke="#7A4A1E" stroke-opacity="0.4" stroke-width="6"/>
+    <path d="M300 840 L272 892 M500 840 L528 892" stroke="#9C6A38" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(624 620) rotate(10)">
+    <rect x="-60" y="-26" width="120" height="52" rx="4" fill="#FFF7E6" stroke="#39271D" stroke-opacity="0.2"/>
+    <path d="M-42 -6 H42" stroke="#B87525" stroke-width="2"/>
+    <path d="M-30 8 H30" stroke="#39271D" stroke-opacity="0.15" stroke-width="2"/>
+  </g>
+
+  <g fill="#E9A23B">
+    <path d="M176 350 c1.2 9 4.2 12 13 13 -8.8 1-11.8 4-13 13-1.2-9-4.2-12-13-13 8.8-1 11.8-4 13-13Z"/>
+    <path d="M644 330 c1.2 9 4.2 12 13 13 -8.8 1-11.8 4-13 13-1.2-9-4.2-12-13-13 8.8-1 11.8-4 13-13Z" fill="#C9503C"/>
+  </g>
+
+  <rect width="800" height="1000" filter="url(#grain)"/>
+</svg>

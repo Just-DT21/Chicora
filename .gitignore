@@ -1,0 +1,31 @@
+# --- dependencies and build output -----------------------------------------
+node_modules/
+dist/
+dist-server/
+
+# --- secrets and local environment -----------------------------------------
+.env
+.env.*
+!.env.example
+data/.secret
+
+# --- local (non-production) data store and private uploads -----------------
+data/store.json
+data/uploads/
+data/payment-qr/
+data/payment-proofs/
+
+# --- logs, caches, coverage -------------------------------------------------
+*.log
+npm-debug.log*
+.cache/
+coverage/
+
+# --- Supabase CLI working files ---------------------------------------------
+supabase/.temp/
+
+# --- tooling / OS -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+.freebuff/
+.cloud-attachments/

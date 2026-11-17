@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="title">
+  <title id="title">A cloth-bound letter-writing set with envelopes and a brass pen</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFF9EF"/>
+      <stop offset="0.6" stop-color="#F7EBDB"/>
+      <stop offset="1" stop-color="#EEE0CB"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#FFE8C2"/>
+      <stop offset="1" stop-color="#FFE8C2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5C282"/>
+      <stop offset="0.55" stop-color="#E9A23B"/>
+      <stop offset="1" stop-color="#C1812B"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFDF7"/>
+      <stop offset="1" stop-color="#F4E6D2"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBE7B7"/>
+      <stop offset="0.5" stop-color="#D7A751"/>
+      <stop offset="1" stop-color="#9C6A26"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <ellipse cx="400" cy="420" rx="370" ry="350" fill="url(#halo)"/>
+  <ellipse cx="404" cy="826" rx="300" ry="42" fill="#39271D" fill-opacity="0.15" filter="url(#soft)"/>
+
+  <g transform="rotate(-6 380 580)">
+    <rect x="176" y="356" width="380" height="470" rx="10" fill="#B87525" opacity="0.35" transform="translate(14 18)"/>
+    <rect x="176" y="356" width="380" height="470" rx="10" fill="url(#cover)"/>
+    <rect x="176" y="356" width="60" height="470" rx="10" fill="#B87525" opacity="0.75"/>
+    <rect x="236" y="374" width="300" height="434" rx="4" fill="url(#paper)"/>
+    <g stroke="#39271D" stroke-opacity="0.16" stroke-width="2">
+      <path d="M266 470 H506"/>
+      <path d="M266 514 H506"/>
+      <path d="M266 558 H506"/>
+      <path d="M266 602 H462"/>
+      <path d="M266 646 H506"/>
+      <path d="M266 690 H438"/>
+    </g>
+    <circle cx="376" cy="402" r="12" fill="none" stroke="#B87525" stroke-width="2"/>
+    <path d="M368 402 l6 6 12 -14" stroke="#B87525" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <rect x="236" y="700" width="300" height="68" fill="#FFF9EF" opacity="0.8"/>
+  </g>
+
+  <g transform="rotate(9 540 660)">
+    <rect x="430" y="590" width="250" height="170" rx="6" fill="url(#paper)"/>
+    <path d="M430 590 L555 680 L680 590" fill="#F0E1CB" stroke="#D2BC9E" stroke-width="2"/>
+    <path d="M430 760 L530 680" stroke="#D2BC9E" stroke-width="2"/>
+    <path d="M680 760 L580 680" stroke="#D2BC9E" stroke-width="2"/>
+    <circle cx="555" cy="692" r="24" fill="#C9503C"/>
+    <path d="M555 678 c7 3 10 10 10 16 -6 0 -13 -4 -10 -16Z" fill="#F3B9A8"/>
+  </g>
+
+  <g transform="rotate(-32 380 780)">
+    <rect x="240" y="772" width="300" height="20" rx="10" fill="url(#brass)"/>
+    <path d="M540 772 l46 10 -46 10Z" fill="#FBE7B7"/>
+    <path d="M586 780 l16 2 -16 3Z" fill="#39271D"/>
+    <rect x="300" y="772" width="14" height="20" fill="#B87525"/>
+  </g>
+
+  <g transform="translate(640 420) rotate(12)">
+    <rect x="0" y="0" width="90" height="26" rx="4" fill="#E9A23B" opacity="0.9"/>
+    <rect x="0" y="34" width="90" height="26" rx="4" fill="#E8A16A" opacity="0.8"/>
+    <rect x="0" y="68" width="90" height="26" rx="4" fill="#C9503C" opacity="0.7"/>
+  </g>
+
+  <g fill="#B87525" opacity="0.7">
+    <path d="M176 300 c1.2 9 4.2 12 13 13 -8.8 1-11.8 4-13 13-1.2-9-4.2-12-13-13 8.8-1 11.8-4 13-13Z"/>
+    <path d="M676 640 c1 8 3.6 10.6 11 12 -7.4 1.4-10 4-11 12-1-8-3.6-10.6-11-12 7.4-1.4 10-4 11-12Z" fill="#C9503C"/>
+  </g>
+
+  <rect width="800" height="1000" filter="url(#grain)"/>
+</svg>

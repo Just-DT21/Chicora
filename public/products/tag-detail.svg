@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="title">
+  <title id="title">A kraft gift tag with a wax seal resting on cream tissue paper</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFFCF4"/>
+      <stop offset="0.55" stop-color="#F6E9D6"/>
+      <stop offset="1" stop-color="#EAD9BF"/>
+    </linearGradient>
+    <linearGradient id="tag" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EFD9B9"/>
+      <stop offset="0.55" stop-color="#E2C7A0"/>
+      <stop offset="1" stop-color="#C9A97E"/>
+    </linearGradient>
+    <linearGradient id="seal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E86952"/>
+      <stop offset="0.6" stop-color="#C9503C"/>
+      <stop offset="1" stop-color="#8E3022"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+
+  <g opacity="0.55" stroke="#FFFFFF" stroke-width="3" fill="none">
+    <path d="M-40 250 C160 180 300 320 480 240 C620 180 740 240 850 200"/>
+    <path d="M-40 650 C140 590 320 700 520 620 C650 570 760 620 850 590"/>
+    <path d="M-40 830 C180 780 300 860 500 800 C650 760 760 800 850 770"/>
+  </g>
+
+  <polygon points="0,700 800,520 800,1000 0,1000" fill="#E9A23B" opacity="0.12"/>
+
+  <g transform="translate(400 470) rotate(-8)">
+    <rect x="-190" y="-230" width="380" height="460" rx="16" fill="#39271D" opacity="0.18" filter="url(#soft)" transform="translate(18 26)"/>
+    <path d="M-190 -210 L-150 -230 H150 L190 -210 V210 L150 230 H-150 L-190 210 Z" fill="url(#tag)"/>
+    <path d="M-190 -210 L-150 -230 H150 L190 -210" stroke="#B99771" stroke-width="3" fill="none"/>
+    <rect x="-150" y="-230" width="300" height="460" fill="none" stroke="#B99771" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 8"/>
+
+    <circle cx="0" cy="-180" r="22" fill="#F6EBD9" stroke="#B99771" stroke-width="3"/>
+    <path d="M0 -202 C-40 -260 -100 -240 -90 -212 C-80 -186 -30 -192 0 -202Z" fill="none" stroke="#B99771" stroke-width="4" stroke-linecap="round"/>
+
+    <text x="0" y="-80" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="62" fill="#5B4028">chicora</text>
+    <path d="M-130 -58 H130" stroke="#5B4028" stroke-opacity="0.3" stroke-width="2"/>
+    <text x="0" y="0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" letter-spacing="6" fill="#5B4028" fill-opacity="0.6">HAND WRAPPED</text>
+    <text x="0" y="40" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#5B4028" fill-opacity="0.75">for you, with love</text>
+
+    <circle cx="0" cy="136" r="52" fill="url(#seal)"/>
+    <circle cx="0" cy="136" r="42" fill="none" stroke="#F3B9A8" stroke-opacity="0.4" stroke-width="2"/>
+    <path d="M0 108 c2.6 18 8.6 24 26 26 -17.4 2.6-23.4 8.6-26 26 -2.6-17.4-8.6-23.4-26-26 17.4-2-2-8 26-26Z" fill="#FFE1D4" opacity="0.6"/>
+    <text x="0" y="144" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#FFF3E9" fill-opacity="0.9">C</text>
+  </g>
+
+  <g transform="translate(640 800) rotate(8)">
+    <rect x="-90" y="-40" width="180" height="80" rx="6" fill="#FFF9ED" stroke="#39271D" stroke-opacity="0.12"/>
+    <path d="M-60 -10 H60" stroke="#B87525" stroke-width="2"/>
+    <path d="M-40 10 H40" stroke="#39271D" stroke-opacity="0.14" stroke-width="2"/>
+  </g>
+
+  <rect width="800" height="1000" filter="url(#grain)"/>
+</svg>

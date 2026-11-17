@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="title">
+  <title id="title">After Hours eau de parfum in a heavy amber glass bottle</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#FFF9EF"/>
+      <stop offset="0.55" stop-color="#F6E8D5"/>
+      <stop offset="1" stop-color="#EAD6BA"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#FFE3B0"/>
+      <stop offset="1" stop-color="#FFE3B0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8C4E16"/>
+      <stop offset="0.22" stop-color="#C9822B"/>
+      <stop offset="0.46" stop-color="#F5C179"/>
+      <stop offset="0.68" stop-color="#D9943A"/>
+      <stop offset="1" stop-color="#7C4312"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8E3AE"/>
+      <stop offset="0.5" stop-color="#D2A24B"/>
+      <stop offset="1" stop-color="#9A6722"/>
+    </linearGradient>
+    <linearGradient id="label" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF7"/>
+      <stop offset="1" stop-color="#F3E4CE"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <ellipse cx="400" cy="390" rx="380" ry="350" fill="url(#halo)"/>
+  <circle cx="400" cy="480" r="262" fill="none" stroke="#39271D" stroke-opacity="0.08" stroke-dasharray="2 10"/>
+  <ellipse cx="404" cy="824" rx="220" ry="38" fill="#39271D" fill-opacity="0.2" filter="url(#soft)"/>
+
+  <g>
+    <path d="M330 250 L286 190 M470 250 L514 190" stroke="#39271D" stroke-opacity="0.12" stroke-width="3"/>
+    <rect x="352" y="300" width="96" height="90" fill="url(#glass)" opacity="0.9"/>
+    <rect x="322" y="270" width="156" height="66" rx="10" fill="url(#cap)"/>
+    <rect x="322" y="270" width="156" height="22" rx="10" fill="#F8E3AE" opacity="0.5"/>
+    <rect x="352" y="336" width="96" height="18" fill="#9A6722" opacity="0.5"/>
+
+    <rect x="266" y="380" width="268" height="400" rx="46" fill="url(#glass)"/>
+    <rect x="266" y="380" width="268" height="400" rx="46" fill="none" stroke="#7C4312" stroke-opacity="0.25" stroke-width="3"/>
+    <path d="M292 420 C292 400 508 400 508 420" stroke="#FFE8BE" stroke-opacity="0.4" stroke-width="8" fill="none"/>
+    <rect x="292" y="430" width="26" height="300" rx="13" fill="#FFF3D6" opacity="0.28"/>
+    <rect x="484" y="450" width="16" height="250" rx="8" fill="#5E3009" opacity="0.18"/>
+
+    <rect x="306" y="530" width="188" height="160" rx="10" fill="url(#label)"/>
+    <path d="M400 556 c14 16 22 30 22 44 0 16-10 26-22 26s-22-10-22-26c0-14 8-28 22-44Z" fill="#E9A23B" opacity="0.85"/>
+    <path d="M348 640 H452" stroke="#39271D" stroke-opacity="0.25" stroke-width="2"/>
+    <path d="M366 654 H434" stroke="#39271D" stroke-opacity="0.15" stroke-width="2"/>
+    <path d="M380 668 H420" stroke="#39271D" stroke-opacity="0.12" stroke-width="2"/>
+    <text x="400" y="676" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#39271D" fill-opacity="0.55" font-style="italic">after hours</text>
+  </g>
+
+  <g transform="translate(610 700) rotate(9)">
+    <path d="M0 60 C-4 28 4 0 12 -22" stroke="#8C7A4E" stroke-width="4" fill="none"/>
+    <g fill="#E8A16A">
+      <ellipse cx="12" cy="-30" rx="16" ry="30"/>
+      <ellipse cx="8" cy="-30" rx="16" ry="30" transform="rotate(60 12 -30)"/>
+      <ellipse cx="16" cy="-30" rx="16" ry="30" transform="rotate(-60 12 -30)"/>
+    </g>
+    <circle cx="12" cy="-30" r="10" fill="#B87525"/>
+  </g>
+
+  <g fill="#E9A23B">
+    <path d="M196 420 c1.4 11 5 14.6 16 16 -11 1.4-14.6 5-16 16-1.4-11-5-14.6-16-16 11-1.4 14.6-5 16-16Z"/>
+    <path d="M630 380 c1.2 9 4.2 12 13 13 -8.8 1-11.8 4-13 13-1.2-9-4.2-12-13-13 8.8-1 11.8-4 13-13Z" fill="#C9503C"/>
+  </g>
+
+  <rect width="800" height="1000" filter="url(#grain)"/>
+</svg>

@@ -1,0 +1,42 @@
+# Render blueprint for CHICORA.
+#
+# One Node web service serves the built React app and the Express API on the same
+# origin (no separate static site, no CORS). Database and file storage live in
+# Supabase, so there is no Render disk and no local persistent state.
+#
+# Required values (set in Render -> Environment; never in this file):
+#   SUPABASE_URL, SUPABASE_SECRET_KEY, ADMIN_ACCESS_CODE, SESSION_SECRET
+services:
+  - type: web
+    name: chicora
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    # --include=dev is required: vite and typescript are build-only devDependencies.
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start:prod
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Secrets: "sync: false" means Render prompts for the value instead of
+      # reading it from the repository.
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+      - key: SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: ADMIN_ACCESS_CODE
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      # Store copy (optional overrides — defaults live in server/config.ts).
+      - key: STORE_PHONE
+        sync: false
+      - key: STORE_EMAIL
+        sync: false
+      - key: STORE_ADDRESS
+        sync: false

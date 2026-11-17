@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="title">
+  <title id="title">The CHICORA amber gift box with a red bow</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF9EF"/>
+      <stop offset="0.55" stop-color="#F7E9D4"/>
+      <stop offset="1" stop-color="#EFDCBF"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="#FFEBC9" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFEBC9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#F4BE6C"/>
+      <stop offset="0.5" stop-color="#E9A23B"/>
+      <stop offset="1" stop-color="#CF8A2A"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#C9822B"/>
+      <stop offset="1" stop-color="#9C5F1C"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBD9A4"/>
+      <stop offset="1" stop-color="#F0B158"/>
+    </linearGradient>
+    <linearGradient id="silk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E3C79C"/>
+      <stop offset="0.28" stop-color="#FFF7E6"/>
+      <stop offset="0.55" stop-color="#FFFDF7"/>
+      <stop offset="0.82" stop-color="#EFD9B4"/>
+      <stop offset="1" stop-color="#D8BA8C"/>
+    </linearGradient>
+    <linearGradient id="bow" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#EA7057"/>
+      <stop offset="0.5" stop-color="#C9503C"/>
+      <stop offset="1" stop-color="#9C3427"/>
+    </linearGradient>
+    <pattern id="dots" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="3.2" fill="#FFF7E6" fill-opacity="0.55"/>
+      <circle cx="35" cy="35" r="3.2" fill="#FFF7E6" fill-opacity="0.42"/>
+    </pattern>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <ellipse cx="400" cy="380" rx="360" ry="330" fill="url(#halo)"/>
+  <circle cx="400" cy="420" r="272" fill="none" stroke="#39271D" stroke-opacity="0.1" stroke-dasharray="2 10"/>
+  <ellipse cx="410" cy="786" rx="246" ry="42" fill="#39271D" fill-opacity="0.2" filter="url(#soft)"/>
+
+  <g>
+    <polygon points="610,380 720,270 720,630 610,740" fill="url(#right)"/>
+    <polygon points="610,530 720,420 720,486 610,596" fill="url(#silk)"/>
+    <polygon points="190,380 300,270 720,270 610,380" fill="url(#top)"/>
+    <polygon points="190,380 300,270 720,270 610,380" fill="url(#dots)"/>
+    <rect x="190" y="380" width="420" height="360" fill="url(#front)"/>
+    <rect x="190" y="380" width="420" height="360" fill="url(#dots)"/>
+
+    <!-- lid -->
+    <polygon points="176,392 296,264 736,264 616,392" fill="#F7CE94" fill-opacity="0.55"/>
+    <polygon points="616,392 736,264 736,300 616,428" fill="#B87525"/>
+
+    <!-- top ribbon -->
+    <polygon points="360,380 444,380 556,270 472,270" fill="url(#silk)"/>
+    <polygon points="245,296 675,296 675,356 245,356" fill="url(#silk)" opacity="0.96"/>
+
+    <!-- front ribbon -->
+    <rect x="382" y="380" width="86" height="360" fill="url(#silk)"/>
+    <rect x="190" y="532" width="420" height="62" fill="url(#silk)"/>
+
+    <!-- shading -->
+    <rect x="190" y="646" width="420" height="94" fill="#7C4A17" opacity="0.14"/>
+    <rect x="190" y="380" width="420" height="26" fill="#7C4A17" opacity="0.08"/>
+    <polygon points="610,380 720,270 720,320 610,430" fill="#5F370E" opacity="0.1"/>
+
+    <!-- polka accents -->
+    <g fill="#FFF7E6" fill-opacity="0.5">
+      <circle cx="268" cy="470" r="5"/>
+      <circle cx="320" cy="500" r="4"/>
+      <circle cx="252" cy="620" r="4.5"/>
+      <circle cx="536" cy="470" r="5"/>
+      <circle cx="574" cy="660" r="4"/>
+      <circle cx="500" cy="690" r="3.5"/>
+    </g>
+
+    <!-- hang tag -->
+    <path d="M620 404 C660 420 664 470 648 500" stroke="#39271D" stroke-opacity="0.4" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+    <g transform="rotate(9 646 540)">
+      <rect x="606" y="500" width="80" height="52" rx="4" fill="#FFF7E6" stroke="#39271D" stroke-opacity="0.22"/>
+      <circle cx="626" cy="514" r="4" fill="#F3E3CB" stroke="#39271D" stroke-opacity="0.25"/>
+      <path d="M636 522 C646 514 656 520 654 528 C652 536 640 540 634 534" stroke="#B87525" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M620 540 h50" stroke="#39271D" stroke-opacity="0.18" stroke-width="2"/>
+    </g>
+
+    <!-- bow -->
+    <g>
+      <path d="M455 276 C405 205 322 205 316 250 C310 294 388 302 449 288 Z" fill="url(#bow)" stroke="#8F2E22" stroke-width="3"/>
+      <path d="M452 280 C418 252 366 250 344 264 C384 270 416 280 442 292 Z" fill="#F08A71" opacity="0.45"/>
+      <path d="M455 276 C505 205 588 205 594 250 C600 294 522 302 461 288 Z" fill="url(#bow)" stroke="#8F2E22" stroke-width="3"/>
+      <path d="M458 280 C492 252 544 250 566 264 C526 270 494 280 468 292 Z" fill="#F08A71" opacity="0.45"/>
+      <path d="M443 292 C414 330 398 372 396 420 C414 404 434 388 440 364 C446 340 448 314 452 300 Z" fill="url(#bow)" stroke="#8F2E22" stroke-width="2.5"/>
+      <path d="M470 292 C496 332 512 374 514 420 C496 402 478 386 470 362 C464 338 462 312 458 300 Z" fill="#B84533" stroke="#8F2E22" stroke-width="2.5"/>
+      <ellipse cx="456" cy="280" rx="28" ry="22" fill="url(#bow)" stroke="#8F2E22" stroke-width="3"/>
+      <ellipse cx="448" cy="272" rx="9" ry="6" fill="#FFE0D4" opacity="0.55"/>
+    </g>
+  </g>
+
+  <g fill="#E9A23B">
+    <path d="M150 300 c1.2 10 4.8 13.6 15 15 -10.2 1.4-13.8 5-15 15-1.2-10-4.8-13.6-15-15 10.2-1.4 13.8-5 15-15Z"/>
+    <path d="M662 190 c1.6 13 6 17 19 19 -13 2-17.4 6-19 19-1.6-13-6-17-19-19 13-2 17.4-6 19-19Z" fill="#C9503C"/>
+    <path d="M716 676 c1 8 3.8 10.8 12 12 -8.2 1.2-11 4-12 12-1-8-3.8-10.8-12-12 8.2-1.2 11-4 12-12Z" fill="#E8A16A"/>
+  </g>
+
+  <rect width="800" height="1000" filter="url(#grain)"/>
+</svg>
